@@ -14,8 +14,21 @@ p, ul {
     font-family: 'Oswald', sans-serif;
     text-align: justify;
 }
-.myPicture{
+#header{
+    position: relative;
+}
+#my-picture {
     border-radius: 20% 40%;
+    float: left;
+    max-height: 400px;
+    padding: 5px;
+    background-color: gray;
+}
+#my-name {
+    text-align: center;
+}
+.image-container {
+    max-height: 410;
 }
 .links{
     font-family: 'Oswald', sans-serif;
@@ -25,7 +38,12 @@ p, ul {
     border-radius: 2px;
     padding: 3px 6px;
     margin: 3px;
-
+}
+#my-links{
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top: 540px;
 }
 #highlight {
     color: cornflowerblue;
@@ -33,6 +51,15 @@ p, ul {
 #trybe {
     color:rgb(85, 179, 124)
 }
-#header {
-    display: inline-block
+#about-me {
+    margin: 5% 0;
+    max-height: 400px;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+}
+#main-habilities{
+    position: absolute;
+    top: 60%;
+    left: 10px;
 }
