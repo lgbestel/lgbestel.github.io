@@ -15,14 +15,14 @@ p, ul {
     text-align: justify;
 }
 #header{
-    position: relative;
+    /*position: relative;*/
 }
 #my-picture {
     border-radius: 20% 40%;
     float: left;
     max-height: 400px;
     padding: 5px;
-    background-color: gray;
+    background-color: rgb(48, 48, 48);
 }
 #my-name {
     text-align: center;
@@ -37,10 +37,22 @@ p, ul {
     text-decoration: none;
     border-radius: 2px;
     padding: 3px 6px;
-    margin: 3px;
+    margin: 5px;
 }
+
+nav li {
+    display: inline-block;
+}
+
+nav ul {
+    padding: 0;
+}
+
+.links:hover {
+    background-color: rgb(28, 28, 119);
+}
+
 #my-links{
-    border: 0;
     padding: 0;
     position: absolute;
     top: 540px;
@@ -54,12 +66,13 @@ p, ul {
 #about-me {
     margin: 5% 0;
     max-height: 400px;
+    max-width: 500px;
     position: absolute;
-    top: 55%;
+    top: 10%;
     left: 45%;
 }
 #main-habilities{
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 10px;
 }
