@@ -33,3 +33,6 @@ p, ul {
 #trybe {
     color:rgb(85, 179, 124)
 }
+#header {
+    display: inline-block
+}
