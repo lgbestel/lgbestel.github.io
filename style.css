@@ -10,6 +10,10 @@ body {
     background-color: rgb(13, 24, 24);
     color: antiquewhite;
     padding: 10px 5px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    max-width: 1000px;
 }
 
 h1 {
@@ -32,8 +36,7 @@ p, ul {
 
 #image-article{
     display: flex;
-    align-items: center;
-    align-content: center;
+    justify-content: center;
     padding: 10px;
     gap: 20px;
 }
@@ -47,6 +50,9 @@ p, ul {
 }
 
 #my-name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -116,7 +122,14 @@ li {
         padding: 10px;
         gap: 20px;
     }
-    
+
+    #my-picture {
+        border-radius: 20% 40%;
+        max-height: 600px;
+        max-width: 600px;
+        width: 100%;
+    }
+  
     .image-container {
         max-width: 300px;
     }
