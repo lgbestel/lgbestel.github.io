@@ -1,35 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(13, 24, 24);
     color: antiquewhite;
+    padding: 10px 5px;
 }
+
 h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
 }
+
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#sobremim {
+    padding: 20px 0;
+}
+
 p, ul {
     font-family: 'Oswald', sans-serif;
     text-align: justify;
 }
-#header{
-    /*position: relative;*/
+
+#image-article{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    gap: 20px;
 }
+
 #my-picture {
     border-radius: 20% 40%;
-    float: left;
     max-height: 400px;
+    max-width: 400px;
     padding: 5px;
     background-color: rgb(48, 48, 48);
 }
+
 #my-name {
     text-align: center;
 }
+
 .image-container {
-    max-height: 410;
+    max-height: 410px;
 }
+
 .links{
     font-family: 'Oswald', sans-serif;
     background-color: cornflowerblue;
@@ -40,39 +64,66 @@ p, ul {
     margin: 5px;
 }
 
-nav li {
-    display: inline-block;
+nav ul {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+    padding: 5px;
 }
 
-nav ul {
-    padding: 0;
+li {
+    list-style: none;
 }
 
 .links:hover {
     background-color: rgb(28, 28, 119);
 }
 
-#my-links{
-    padding: 0;
-    position: absolute;
-    top: 540px;
-}
 #highlight {
     color: cornflowerblue;
 }
+
 #trybe {
     color:rgb(85, 179, 124)
 }
+
 #about-me {
-    margin: 5% 0;
     max-height: 400px;
     max-width: 500px;
-    position: absolute;
     top: 10%;
     left: 45%;
 }
-#main-habilities{
-    position: absolute;
-    top: 70%;
-    left: 10px;
+
+#habilidades {
+    padding: 20px 5px;
+}
+
+#main-habilities ul{
+    display: flex;
+    flex-flow: column;
+    padding-left: 5px;
+    gap: 5px;
+}
+
+@media screen and (max-width: 610px) {
+    #image-article{
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        align-content: center;
+        padding: 10px;
+        gap: 20px;
+    }
+    
+    .image-container {
+        max-width: 300px;
+    }
+
+    nav ul {
+        padding: 20px 0;
+        margin: 0;
+        width: 100%;
+    }
 }
